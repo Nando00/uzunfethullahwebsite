@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+      <title>HTML Practice</title>
+	  <style>
+	   p
+      { margin: 0.9em 0em; }
+      /* styles for smartphones with screen widths 480px or smaller */
+      @media handheld and (max-width: 480px), 
+         screen and (max-device-width: 480px), 
+         screen and (max-width: 480px) 
+      {
+         div {
+            -webkit-column-count: 1; 
+            column-count: 1; }
+      }
+      /* styles for devices with screen widths of 481px to 1024px */
+      @media only screen and (min-width: 481px) and 
+         (max-width: 1024px)
+      {
+         div {
+            -webkit-column-count: 2; 
+            column-count: 2;
+            -webkit-column-gap: 70px; 
+            column-gap: 70px;
+            -webkit-column-rule: 1px outset black; 
+            column-rule: 1px outset black; }
+      }
+      /* styles for devices with screen widths of 1025px or greater */
+      @media only screen and (min-width: 1025px)
+      {
+         div {
+            -webkit-column-count: 3; 
+            column-count: 3;
+            -webkit-column-gap: 70px; 
+            column-gap: 70px;
+            -webkit-column-rule: 1px outset black; 
+            column-rule: 1px outset black; }
+      }
+	  
+		body {
+			font-family: "Open Sans";
+			background: url("mauve.jpg") repeat;
+			color: #E8EAF6;
+			width: 60%;
+			margin: auto;
+			
+		}
+		
+		p {
+			background-color: #1f1f1f;
+			font-size: 15pt;
+			opacity: .87;
+			padding: 8;
+		}
+		ol {
+		font-size: 18pt;
+		}
+		h1 {
+		font-size: 55pt;
+		}
+		
+		</style>
+   </head>
+   <body>
+      <header>
+         <h1>HTML5 Practice and Self Introduction Page</h1>
+		 <h2> Fethullah Uzun </h2>
+      </header>
+      <div>
+         <p>Hello everyone it's Fethullah and this is my first HTML page and so far so good! I really haven't practice HTML and I always thought that it would be complicated untill now.</p>
+         <p>My hobbies are traveling and photographing natural beauties and my favorite place to visit is waterfalls.</p> 
+         <p> I'm from Turkey and I've been living in USA for 7 years. I'm a senior at UHD and I'm graduating this semester. I still haven't decided which field to improve my skills but I'm interested in game and web development. <p>
+		 <p> I had gaming experience in previous semester and I learned many cool stuff. I'm hoping to learn a lot from this course and encourage myself to develop a website that could actually be popular nationwide.
+	         I also sell on Etsy and I'm looking forward to create a fancy online sales website soon! </p>
+	     <p> Here I'm attaching my own online store on Etsy and some of the shops that I really admire. You can find various of gifts for special days and holidays especially for halloween and Christmas! 
+		 <ul>
+		  <!-- this starts a nested unordered list, which uses a -->
+            <!-- different bullet. The list ends when you -->
+            <!-- close the <ul> tag. -->
+            <ul>
+			
+         <li>Apparel Stores</li>
+                  <!-- nested ordered list -->
+                  <ol>
+                     <li><a href = "https://www.etsy.com/shop/LeedsDesign?ref=search_shop_redirect">Etsy - LeedsDesign</a></li>
+					 <li><a href = https://www.etsy.com/shop/VosVosDesign>Etsy - VosVosDesign</a></li>
+					 <li><a href = https://www.etsy.com/shop/NewVisionDesignUS?>Etsy - NewVisionDesignUS</a></li>
+    
+                  </ol>
+               </li> <!-- ends line 27 new applications li-->
+
+               <li>Candle Stores</li>
+			        <ol>
+                    
+					 <li><a href = https://www.etsy.com/shop/sweetwaterdecor>Etsy - sweetwaterdecor</a></li>
+					 <li><a href = https://www.etsy.com/shop/AlphatoxGummies?>Etsy - AlphatoxGummies</a></li>
+					 <li><a href = https://www.etsy.com/shop/TinyBowCandles >Etsy - TinyBowCandles </a></li>
+    
+                  </ol>
+               <li>Embroidery Stores</li>
+			        <ol>
+                    
+					 <li><a href = https://www.etsy.com/shop/ChloeArtCrafts>Etsy - ChloeArtCrafts</a></li>
+					 <li><a href = https://www.etsy.com/shop/ionaroseart?>Etsy - ionaroseart</a></li>
+					 <li><a href = https://www.etsy.com/shop/TamarNahirYanai >Etsy - TamarNahirYanai </a></li>
+							
+                  </ol>
+  <body>
+      <h1>Etsy Magazine</h1>
+      <p>Please fill out this form to receive notifications on the items you like.</p>
+
+      <form method = "post" action = "http://www.deitel.com">
+
+         <input type = "hidden" name = "recipient"
+            value = "deitel@deitel.com">
+         <input type = "hidden" name = "subject" 
+            value = "Feedback Form">
+         <input type = "hidden" name = "redirect" 
+            value = "main.html"> 
+
+         <p><label>Your Name: 
+               <input name = "name" type = "text" size = "25">
+            </label></p>
+ 
+         <!-- <textarea> creates a multiline textbox -->
+         <p><label>Please tell us if you have any suggestions for our service:<br>
+            <textarea name = "comments"
+               rows = "4" cols = "36">Enter suggestions here.</textarea>
+         </label></p>
+
+         <!-- <input type = "password"> inserts a -->
+         <!-- textbox whose display is masked with -->
+         <!-- asterisk characters -->
+         <p><label>Email Address: 
+            <input name = "email" type = "password"  size = "25">
+         </label></p>              
+
+         <p>
+            <strong>Things you liked:</strong><br>
+
+            <label>Apparel Stores
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Design"></label>
+            <label>Candle Stores
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Links"></label>
+            <label>Embroidery Stores
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Ease"></label> 
+            
+         </p>
+
+         <!-- <input type = "radio"> creates a radio -->
+         <!-- button. The difference between radio buttons -->
+         <!-- and checkboxes is that only one radio button -->
+         <!-- in a group can be selected. -->
+         <p>
+            <strong>How did you get to our site?:</strong><br>
+
+            <label>Google
+               <input name = "howtosite" type = "radio"
+                  value = "search engine" checked></label>
+            <label>UHD Blackboard
+               <input name = "howtosite" type = "radio" 
+                  value = "link"></label> 
+           
+         </p>
+
+         <p>
+            <label>Rate our site: 
+
+                <!-- the <select> tag presents a drop-down -->
+                <!-- list with choices indicated by the -->
+                <!-- <option> tags -->
+               <select name = "rating">
+                  <option selected>Amazing</option>
+                  <option>Excellent</option>
+                  <option>Beautiful</option>
+                  <option>Very Good</option>
+                  <option>Good</option>
+                  <option>No Comment</option>
+                  <option>Barely liked</option>
+                  <option>Terrible</option>
+                  <option>Awful</option>
+               </select>
+            </label>
+         </p>
+
+         <p>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+         </p>   
+      </form>
+   </body>
+</html>   
+	
+               </li> <!-- ends programming li of line 38 -->
+            </ul> <!-- ends the nested list of line 24 -->
+         </li>	  
+	  
+	  
+		<title>Animation</title>
+      <style type = "text/css">
+         img
+         {
+            position: relative;
+            -webkit-animation: movingimage linear 10s 1s 2 alternate;
+            -moz-animation: movingimage linear 10s 1s 2 alternate;
+            animation: movingimage linear 10s 1s 2 alternate;
+         }
+         @-webkit-keyframes movingimage 
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+         @-moz-keyframes movingimage 
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+         @keyframes movingimage
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+      </style>
+   </head>
+   <body>
+      <img src = "Etsy.jpg" width = "1200" height = "810"
+         alt = "Java How to Program book cover">
+      <div></div>
+	
+   </body>
+</html>
+      </div>
+   </body>
+</html>
+
+
